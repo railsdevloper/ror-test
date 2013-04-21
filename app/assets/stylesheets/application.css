@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
  */
+
+
+.feed h2 {
+  font-size: 16px;
+  margin-bottom: 2px;
+}

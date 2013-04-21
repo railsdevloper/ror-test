@@ -13,3 +13,23 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+
+$(function() {
+
+	$('body').on('click', '.feed_data', function(event){
+		elem = $(this);
+		event.preventDefault();
+		$.ajax({
+			url: elem.attr('href'),
+			type: 'POST',
+			dataType: 'html',
+			data: {'feed_obj' : elem.attr("feed_date")},
+			success: function(data){
+				// alert(elem.parent().next().html());
+			  elem.parent().next().html(data);
+      		}
+		});
+		return false;
+	});	
+});
