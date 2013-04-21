@@ -3,7 +3,7 @@
 
 <% for feed in @feeds %>
   <div class="feed">
-    <h2><%= link_to feed.title, feeds_display_feed_content_path, :class => 'feed_data', :feed_date => feed.to_json%></h2>
+    <h2><%= link_to feed.title, feeds_display_feed_content_path, :class => 'feed_data', :feed_title => feed.title%></h2>
     <div class='feed_content'>
 	</div>
   </div>

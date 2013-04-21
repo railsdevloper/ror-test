@@ -22,11 +22,10 @@ $(function() {
 		event.preventDefault();
 		$.ajax({
 			url: elem.attr('href'),
-			type: 'POST',
+			type: 'GET',
 			dataType: 'html',
-			data: {'feed_obj' : elem.attr("feed_date")},
+			data: {'feed_title' : elem.attr("feed_title")},
 			success: function(data){
-				// alert(elem.parent().next().html());
 			  elem.parent().next().html(data);
       		}
 		});

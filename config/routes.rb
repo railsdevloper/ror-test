@@ -1,7 +1,7 @@
 RailsInterviewProblem::Application.routes.draw do
   get "feeds/index"
 
-  post "feeds/display_feed_content"
+  get "feeds/display_feed_content"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

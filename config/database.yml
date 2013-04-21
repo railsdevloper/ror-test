@@ -8,17 +8,17 @@ defaults: &defaults
 
 development:
   database: ror-test
-  password: testtest
+  password: postgres
   <<: *defaults
 
 test: &TEST
   database: ror-test
-  password: testtest
+  password: postgres
   <<: *defaults
 
 production:
   database: ror-test
-  password: testtest
+  password: postgres
   <<: *defaults
 
 
